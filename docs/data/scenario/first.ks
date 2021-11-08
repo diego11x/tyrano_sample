@@ -1,46 +1,77 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="漢字テスト"]
 [hidemenubutton]
-[wait time=200]
+[wait time=1000]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
-
-メロスは激怒した。[l][r]
-
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
-
-(中略)[l][r]
-
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
-
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+「テスト開始」[l][r]
+「第１問：緊迫」[r]
+[link target=*tag_kinpaku] →きんぱく [endlink][r]
+[link target=*tag_jinhaku] → じんはく[endlink][r]
 [s]
-
-*tag_sleep
-
-[cm]
-
-[bg storage=sleep.jpg time=500]
-
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
-
-【 BAD END 】[l][cm]
-
+*tag_kinpaku
+「第2問：償う」[r]
+[link target=*tag_tomonau] →ともなう [endlink][r]
+[link target=*tag_tsugunau] → つぐなう[endlink][r]
+[s]
+*tag_tomonau
+「第3問：玄人」[r]
+[link target=*tag_genin] →げんにん [endlink][r]
+[link target=*tag_kurouto] → くろうと[endlink][r]
+[s]
+*tag_genin　　　
+「残念でした！！1点」[wait time=1000][cm]
+[jump target=*start]
+*tag_kurouto　　　
+「惜しい…2点」[wait time=200][cm]
 [jump target=*start]
 
-*tag_run
-
-[bg storage=run.jpg time=500]
-
-[cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
-
-【 GOOD END 】[l][cm]
-
+*tag_tsugunau 
+「第3問：玄人」[r]
+[link target=*tag_genin1] →げんにん [endlink][r]
+[link target=*tag_kurouto1] → くろうと[endlink][r]
+[s]
+*tag_genin1　
+「惜しい…2点」[wait time=200][cm]
 [jump target=*start]
+*tag_kurouto1 
+「おめでとう！！！！！！満点」[wait time=200][cm]
+[jump target=*start]
+
+
+*tag_jinhaku
+「第2問：償う」[r]
+[link target=*tag_tomonau2] →ともなう [endlink][r]
+[link target=*tag_tsugunau2] → つぐなう[endlink][r]
+[s]
+*tag_tomonau2
+「第3問：玄人」[r]
+[link target=*tag_genin2] →げんにん [endlink][r]
+[link target=*tag_kurouto2] → くろうと[endlink][r]
+[s]
+*tag_genin2  
+「あなたは失格です。0点」[wait time=200][cm]
+[jump target=*start]
+*tag_kurouto2　
+「残念でした！！1点」[wait time=200][cm]
+[jump target=*start]
+
+*tag_tsugunau2
+「第3問：玄人」[r]
+[link target=*tag_genin3] →げんにん [endlink][r]
+[link target=*tag_kurouto3] → くろうと[endlink][r]
+[s]
+*tag_genin3   
+「残念でした！！1点」[wait time=200][cm]
+[jump target=*start]
+*tag_kurouto3 
+「惜しい…2点」[wait time=200][cm]
+[jump target=*start]
+
+
+
+
+
+
+
